@@ -1,6 +1,6 @@
 {
   "name": "@agen/gzip",
-  "version": "0.8.2",
+  "version": "0.8.3",
   "description": "Async Generator utilities",
   "keywords": [
     "async",
@@ -11,7 +11,7 @@
   "author": {
     "name": "Mikhail Kotelnikov"
   },
-  "type" : "module",
+  "type": "module",
   "main": "dist/agen-gzip.js",
   "unpkg": "dist/agen-gzip.min.js",
   "jsdelivr": "dist/agen-gzip.min.js",
@@ -20,7 +20,7 @@
     "package.json": "./package.json",
     "import": "./src/index.js",
     "require": "./dist/agen-gzip.js"
-  },  
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/agenjs/agen-gzip.git"
