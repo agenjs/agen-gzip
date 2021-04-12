@@ -11,10 +11,16 @@
   "author": {
     "name": "Mikhail Kotelnikov"
   },
+  "type" : "module",
   "main": "dist/agen-gzip.js",
   "unpkg": "dist/agen-gzip.min.js",
   "jsdelivr": "dist/agen-gzip.min.js",
   "module": "dist/agen-gzip-esm.js",
+  "exports": {
+    "package.json": "./package.json",
+    "import": "./src/index.js",
+    "require": "./dist/agen-gzip.js"
+  },  
   "repository": {
     "type": "git",
     "url": "https://github.com/agenjs/agen-gzip.git"
@@ -25,7 +31,7 @@
   ],
   "scripts": {
     "pretest": "rollup -c",
-    "test": "node -r esm ./test/index.js && eslint src",
+    "test": "node ./test/index.js && eslint src",
     "prepublishOnly": "rm -rf dist && yarn test",
     "postpublish": "zip -j dist/agen-gzip.zip -- LICENSE README.md dist/*.js"
   },
