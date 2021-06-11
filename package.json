@@ -1,6 +1,6 @@
 {
   "name": "@agen/gzip",
-  "version": "0.8.3",
+  "version": "0.8.4",
   "description": "Async Generator utilities",
   "keywords": [
     "async",
@@ -27,12 +27,10 @@
     "require": "./dist/cjs/agen-gzip.js",
     "default": "./src/index.js"
   },
-
   "repository": {
     "type": "git",
     "url": "https://github.com/agenjs/agen-gzip.git"
   },
-  
   "scripts": {
     "pretest": "rollup -c",
     "test": "node ./test/index.js && eslint src",
