@@ -1,5 +1,5 @@
 import tape from "tape-await";
-import * as agen from '../dist/agen-gzip-esm.js';
+import * as agen from '../dist/esm/agen-gzip-esm.js';
 
 testData(['']);
 testData(['a']);
